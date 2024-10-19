@@ -1,0 +1,362 @@
+body {
+    background-color: #114232;
+    margin: 0;
+}
+
+.mainColor {
+  background-color: #fbf8f4;
+  margin: 0;
+}
+
+#myVideo {
+    width: 100%;
+    border-bottom:3px solid #114232;
+}
+
+.header {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100px;
+    background-color: #114232;
+    position: relative;
+}
+
+.heading {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 30px;
+    font-family: "Roboto Serif", serif;
+}
+
+.heading:hover {
+    font-size: 25px;
+    transition: 1s;
+    color: #E1F0DA;
+}
+
+.ru {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  color: #114232;
+  background-color:#E1F0DA;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+.tr {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  color: #114232;
+  background-color: #FFF7F1;
+  border: none;
+  border-radius: 3px;
+}
+
+.tr:hover {
+  background-color: #E1F0DA;
+  font-weight: bold;
+}
+
+.chapter {
+    color:#114232;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 50px;
+    font-family: "Roboto Serif", serif;
+}
+
+.aboutMeChapter {
+  font-family: "Roboto Serif", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #12372A;
+  font-size: 16px;
+  font-style: italic;
+}
+
+li {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.photo {
+  margin: 20px;
+  border-radius: 5px;
+  border:1px solid aliceblue;
+  box-shadow:3px 2px aliceblue;
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.chapterNoMargin {
+  color:#114232;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+ .priceChapter {
+    display: flex;
+    justify-content: center;
+}
+
+  .priceDetails {
+    color: #114232;
+    margin: 10px;
+    font-family: "Roboto Serif", serif;
+    margin-bottom: 60px;
+   
+}
+
+  .flip-card {
+    background-color: #FBF9F1;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    border: 2px solid #114232;
+    border-radius: 10px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flip-card-back {
+    background-image: url(https://cdn.glitch.global/57be3043-719e-4222-aa85-9f89c29a0d33/salfejio.avif?v=1720539917599);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    border: 1px solid #114232;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    font-size: larger;
+  }
+  
+  .map {
+    display: flex;
+    justify-content: center;
+    padding: 00px 30px 60px 30px;
+  }
+
+  .containerFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+  }
+
+  .phoneEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 30%;
+    font-size: smaller;
+    color: #BBE2EC;
+  }
+
+  .footerText {
+    width: 18%;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: aliceblue;
+    border:2px solid #FFF7F1;
+  }
+
+  .footerText:hover {
+    width: 25%;
+  }
+
+  .copyRight {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .price {
+  color: black;
+  font-weight: bold;
+  }
+
+  .priceContainer {
+    background-color: #E4F1FF;
+    margin:  14px;
+    padding-bottom: 30px;
+  }
+
+  @media all and (max-width:900px){
+
+    .mainColor {
+      background-color: #FEFBF6;
+    }
+
+    .flip-card {
+      width: 220px;
+      height: 220px;
+    }
+
+    .flip-card-inner {
+      width: 220px;
+      height: 220px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .photo {
+      width: 300px;
+    }
+  }
+
+  @media all and (max-width:500px){
+
+    .mainColor {
+      background-color: #FFF7F1;
+    }
+   
+    .photo {
+      width: 130px;
+      margin: 5px;
+    }
+
+    .pianoCozy {
+      width: 45%;
+    }
+
+    iframe {
+      width: 60%;
+      height: auto;
+    }
+
+    .heading {
+      font-size: 14px;
+      margin: 15px;
+      opacity: 0;
+    }
+
+    .tr {
+      top: 50px;
+    }
+
+    .ru {
+      right: 15px;
+      top: 20px;
+    }
+
+    .flip-card-front p {font-size: 10px;}
+
+    .phoneEmail {
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 6px;
+      margin-top: 20px;
+    }
+
+     .priceChapter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chapter {
+      font-size: 12px;
+    }
+
+    li {
+      font-size: 10px;
+    }
+
+    .aboutMeChapter {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+
+    .chapterNoMargin {
+      font-size: 10px;
+    }
+
+    .copyRight {
+      font-size: 6px;
+    }
+  
+    .flip-card {
+      height: 160px;
+      width: 250px;
+    }
+
+    .flip-card-inner {
+      width: 250px;
+      height: 160px;
+    }
+
+    .priceDetails{
+      margin-bottom: 8px;
+    }
+
+    .containerFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 150px;
+    }
+   
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 10px;
+    }
+
+    .header {
+      height: 140px;
+    }
+    .footerText {
+      padding: 1px;
+      width: 30%;
+    }
+  }
+
